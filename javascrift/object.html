@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="show"></h2>
+    <h3 id="show"></h3>
+    <script>
+        // var a=10;
+        // var b=new Number(20);
+     function abc()
+     {  var dat=new Date();
+       var h=dat.getHours();
+          dat.setHours("")
+    //    var h=dat.getMinutes();
+    //    var h=dat.getSeconds();
+        document.getElementById("show").innerHTML=dat;
+    
+       if( h<= 12)
+        {
+          document.write("good morning");
+       }
+       else if(h>=12 && h<=17)
+        {
+            document.write ("good afternoon");
+    
+       }
+       else if(h>=13 && h <=24){
+        document.write("good evening")
+
+       }
+       setTimeout("1000");
+     }
+     abc();
+    </script>
+</body>
+</html>

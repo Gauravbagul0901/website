@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- <script>
+        var st=new String("hello world")
+        // document.write(st.search("e"))
+        document.write(st.match(""))
+    </script> -->
+    <p id="ab">Lorem ipsum dolor sit amet annimation consectetur hello adipisicing elit. project  Officiis itaque et minus nihil, aperiam aliquam. Atque incidunt beatae inventore ratione amet cupiditate nulla ab accusantium? Voluptatum dolorem numquam suscipit aperiam.</p>
+    <input onkeyup="fun()" type="search" id="sr" placeholder="search">
+    <h2 id="show"></h2>
+    <script>
+        function fun()
+        { 
+             var ab=document.getElementById("ab").innerText;
+            var st=new String(ab);
+            var sr=document.getElementById("sr").value;
+            document.getElementById("show").innerHTML=st.match(sr);
+        
+
+        }
+          
+    </script>
+    <!-- <script>
+        var st=new String ("welcome abc;welcome ab");
+        var res=st.split(";");
+        document.write(res[1]);
+
+    </script> -->
+</body>
+</html>

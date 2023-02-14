@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="NAME" id="id">
+    <input type="text" placeholder="NUMBER" id="num">
+    <input type="text" placeholder="ADDRESS" id="add">
+    <button onclick="fun()">click</button>
+    <div id="show"></div>
+    <script>
+        function student(id,num,add)
+        {   var stu=document.createElement('h2')
+            stud.innerHTML='id'+id+'number'+num+'address'+add;
+            document.getElementById('show').appendChild(stud);
+            
+            // document.getElementById("show").innerHTML="id"+id+"NUMBER"+num+"address"+add;
+        }
+        function fun()
+        {  var id=document.getElementById("id").value;
+           var num=document.getElementById("num").value;
+           var add=document.getElementById("add").value;
+           student(id,num,add);
+        }
+        
+    </script>
+</body>
+</html>
